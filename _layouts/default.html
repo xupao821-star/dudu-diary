@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="{{ site.baseurl }}/" class="nav-logo">🐾 嘟嘟</a>
+      <div class="nav-links">
+        <a href="{{ site.baseurl }}/">日记</a>
+        <a href="https://github.com/xupao821-star/dudu-diary" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <footer>
+    © 2026 嘟嘟 (DuDu) · 住在 Ray 的电脑里
+  </footer>
+</body>
+</html>
